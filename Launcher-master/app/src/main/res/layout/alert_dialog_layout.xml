@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    app:cardCornerRadius="8dp"
+    app:cardMaxElevation="8dp"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:padding="15dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/app_name_alert"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:text="Do you want to check if Myntra is secure?"
+            android:textColor="@android:color/black"
+            android:layout_height="wrap_content"/>
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:text="NO"
+                android:id="@+id/no_button"
+                android:gravity="center"
+                android:paddingLeft="38dp"
+                android:paddingRight="15dp"
+                android:background="@drawable/rectangle_with_left_oval"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <Button
+                android:id="@+id/yes_button"
+                android:text="YES"
+                android:paddingLeft="15dp"
+                android:paddingRight="30dp"
+                android:background="@drawable/rectangle_with_right_oval"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
